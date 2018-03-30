@@ -133,7 +133,6 @@ client.on("ready", () => {
         console.log(`                   ---== TDM ==---                 \n\nMembros: (${client.users.size}):\n\n${membrosNomes}`);
     }, 2000)
     client.user.setGame("não, estudando.");
-    client.guilds.get("428947119135522869").channels.get("428947119517466624").sendMessage("**:warning: Dynos foram reiniciados.**");
     client.user.setStatus(statusIDO[Math.round(Math.random() * statusIDO.length - 1)]);
     setInterval(() => {
         client.user.setStatus(statusIDO[Math.round(Math.random() * statusIDO.length - 1)]);
