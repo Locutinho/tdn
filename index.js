@@ -95,7 +95,7 @@ client.on("message", message => {
 });
 
 client.on('guildMemberAdd', member => {
-    client.guilds.get(member.guild.id).members.get(member.id).sendMessage(`**${member.username}**. bem-vindo ao servidor oficial da **Taverna de Noxus**\nPor favor, leia as regras no canal #bem-vindo.\nO servidor foi criado especialmente para os membros poderem conversar e jogar.\nSe você quiser chamar mais alguém para o servidor, use esse link: https://discord.gg/am4HXUz`);
+    client.guilds.get(member.guild.id).members.get(member.id).sendMessage(`**${member.user.username}**. bem-vindo ao servidor oficial da **Taverna de Noxus**\nPor favor, leia as regras no canal #bem-vindo.\nO servidor foi criado especialmente para os membros poderem conversar e jogar.\nSe você quiser chamar mais alguém para o servidor, use esse link: https://discord.gg/am4HXUz`);
    })
 
 client.on("ready", () => {
