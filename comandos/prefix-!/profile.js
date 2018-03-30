@@ -8,7 +8,7 @@ exports.run = (client, message, args) => {
         "_id": message.mentions.users.first() ? message.mentions.users.first().id : message.author.id
     }, function(erro, documento) {
 
-        var desenvolvedores = ["327632440694800386"]
+        var desenvolvedores = ["315263840268976128", "327632440694800386"]
 
         if (documento) {
 
